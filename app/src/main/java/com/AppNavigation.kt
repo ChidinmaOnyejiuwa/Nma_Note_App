@@ -30,6 +30,7 @@ fun AppNavigation(){
                     noteId = it.arguments!!.getString("noteId")!!
                 )
         }
+
     }
 }
 
@@ -40,4 +41,5 @@ object Routes{
     fun NoteDetail(noteId : String): String {
         return "note-detail/$noteId"
     }
+
 }

@@ -29,17 +29,15 @@ fun NoteItem(note : Note,navController: NavController){
         Column (modifier = Modifier
             .fillMaxWidth()
             .padding(8.dp)) {
-            Text( text = note.title,
-                fontWeight = FontWeight.Black
+            Text(text = note.title,
+                fontWeight = FontWeight.Black,
+                maxLines = 3
             )
-            Text(text = note.content)
+            Text(
+                text = note.content,
+                maxLines = 4
+                )
         }
     }
-    Row (
-        horizontalArrangement = Arrangement.SpaceBetween,
-        verticalAlignment = Alignment.CenterVertically,
-        modifier = Modifier.fillMaxWidth()
-    ){
-        Text(text = "12:45pm")
-    }
+
 }
